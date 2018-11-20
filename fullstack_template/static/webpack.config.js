@@ -1,4 +1,5 @@
-const webpack = require('webpack');
+var webpack = require('webpack');
+var path = require("path");
 const config = {
     entry:  __dirname + '/js/index.jsx',
     module: {
