@@ -15,7 +15,11 @@ const config = {
         filename: 'bundle.js',
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.css']
+        extensions: ['.js', '.jsx', '.css'],
+        modules: [
+            path.join(__dirname, "js/helpers"),
+            "node_modules"
+          ]
     },
 };
 module.exports = config;
