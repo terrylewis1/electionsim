@@ -9,16 +9,13 @@ export default class Hello extends React.Component {
     }
 
     render () {
-        return (
-            <div> 
+        <div>
+        return ( 
             <h1> {this.state.greeting} </h1>
-            <hr/>
-            <Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
-            Say Hello!
-            </Button>
-            </div>
+            <Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}> Say Hello! </Button>
 
         );
+        </div>
     }
 
     personaliseGreeting(greeting) {
